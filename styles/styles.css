@@ -1,0 +1,18 @@
+body{
+    background-color: goldenrod;
+    margin: 5px;
+}
+
+h1{
+    color:yellowgreen;
+    border: 5px solid black;
+    font-weight: normal;
+}
+
+p{
+    font-family: arial;
+    font-style: italic;
+    color: navy;
+    font-weight: bold;
+    text-decoration: underline;
+}
