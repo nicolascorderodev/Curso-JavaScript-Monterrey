@@ -1,14 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>JavaScript</title>
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
         <h1>Lenguaje de programación JavaScript</h1>
-        <p>Hola, comenzamos JavaScript hoy 11 de octubre del 2024 esperamos no morir en el intento 😎</p>
-
+        <p class="texto-principal">Hola, comenzando módulo de  <strong id="importante">JavaScript</strong> hoy 11 de octubre del 2024 espero no morir en el intento 😎.</p>
+        <hr color="black">
+        <h2>Introducción</h2>
+        <p>He concluido con las partes de HTML y CSS, ahora toca aprender un lenguaje de programación: <strong>JavaScript. </strong>Este lenguaje se maneja en toda la <strong>web</strong> y se utiliza para muchas cosas, principalmente para manipular nuestro HTML y CSS.</p>
+        <h3>Competencias de este módulo:</h3>
+        <ul>
+            <li>Comprender la <strong>definición</strong> de script.</li>
+            <li>Aprender sobre la <strong>sintaxis</strong> de JavaScript.</li>
+            <li>Conocer el manejo de <strong>arreglos.</strong></li>
+            <li>Utilizar <strong>condicionales</strong> y <strong>ciclos.</strong></li>
+        </ul>
+        <hr color="black">
+        <h2>TEMA 1: Scripts</h2>
+        <p><strong>JavaScript</strong> es muy distinto a los dos lenguajes vistos en los módulos anteriores. Podemos realizar muchas cosas con él, pero es un poco más dificil de aprender, pues hay que tener claro que este es un lenguaje de programación.</p>
+        <p><strong>JavaScript </strong>cuenta con muchas <strong>librerías.</strong> Las librerías son básicamente código escrito por alguien más, que cumple con alguna función específica. Una de las mas populares es <strong>jQuery, </strong>que nos facilita obtener y cambiar elementos de manera dinámica.</p>
+        <p>En términos simples, un <strong>script</strong>  es un archivo de código ejecutable. Si colocamos una etiqueta <strong>script</strong> en nuestro HTML, el código será ejecutado por el navegador.</p>
+        <h3>Formas de agregar Scripts</h3>
+        <p>Normalmente, los scripts se agregan al final de la etiqueta <strong>body</strong> del documento HTML, pero pueden colocarse en cualquier parte del documento. Hay dos maneras de usar la etiqueta <strong>script</strong>, la primera ligándolo con un archivo con la extensión .js externo y la segunda escribiendo directamente el código JavaScript dentro de la etiqueta <strong>script.</strong></p>
+        <h4>Vinculando un archivo externo JavaScript</h4>
+        <ol>
+        <li>Creamos un archivo con el formato <strong>.js</strong> en nuestro espacio de trabajo.</li>
+        <img src="../img/espacio-trabajo.jpg" alt="Espacio de trabajo JavaScript">
+        <li>Lo enlázamos a nuestro documento <strong>HTML</strong> con la etiqueta <strong>script.</strong></li>
+        <img src="../img/ruta-javascript.jpg" alt="Ruta de JavaScript">
+        </ol>
+        <h4>Utilizando la etiqueta script dentro de HTML</h4>
+        <ol>
+            <li>Escribimos la etiqueta script</li>
+            <img src="../img/etiqueta-script.jpg" alt="Estructura de JavaScript en HTML">
+            <li>Mientras estemos dentro de la etiqueta <strong>script</strong> podemos usar código <strong>JavaScript.</strong></li>
+            <img src="../img/codigo-javascript.jpg" alt="Un código de alerta JavaScript">
+        </ol>
+        <hr color="black">
+        <h2>TEMA 2: Variables</h2>
+        <p>Las <strong> variables</strong> se utilizan para almacenar datos. Se conocen como variables porque su valor puede variar a lo largo de la ejecución del código. En JavaScript, los dos tipos de datos que utilizaremos son números y strings (cadenas de caracteres).</p>
+        <h3>Sintaxis</h3>
+        <p>Cualquier programa de computadora está compuesto por instrucciones en código. A estas instrucciones las denominamos <strong>sentencias.</strong> Las <strong>sentencias</strong> pueden incluir valores, operadores, expresiones y comentarios. Existen dos tipos de valores: <strong>literales y variables</strong> y se manejan de la siguiente manera:</p>
+        <img src="../img/tipos-valores.jpg" alt="Tipos de valores en JavaScript">
+        <p>Como se puede observar en la imagen para crear una variable tenemos que usar la <strong>palabra reservada</strong><span> var. </span>Las palabras reservadas no pueden ser utilizadas fuera de su propósito en el lenguaje.</p>
+        <p>Así como <span>var,</span> existen otras <strong>palabras clave</strong> como las siguientes:</p>
+        <img src="../img/palabras-reservadas.jpg" alt="Palabras reservadas de JavaScript">
+        <p>Cada línea de código en la sección de "Variables" de la imagen es una <strong>declaración.</strong> Para legibilidad y orden, las líneas de código en <strong>JavaScript</strong> que no sean estructuras de control o funciones deben terminar con un punto y coma (";").</p>
+        <p>La idea de crear <strong>variables</strong> es tener almacenados datos que podremos utilizar y modificar más adelante. Podemos nombrar <strong>variables</strong> con cualquier nombre que queramos, con la excepción de <span>palabras clave</span> y a nombres que contengan <span>caracteres especiales</span> a excepción de "_" y "-".</p>
+        <img src="../img/variable_correcta.jpg" alt="Forma de escribir una variable correctamente.">
+        <p>También podemos hacer que diferentes variables interactúen entre sí. Para utilizar el valor actual de una variable, basta con utilizar el nombre que le asignamos. Solo se necesita utilizar <span>var</span> después de declarar la variable.</p>
+        <img src="../img/pasar_valor.jpg" alt="Pasar valor de una variable a otra variable">
+        <hr color="black">
+        <h2>TEMA 3: Funciones</h2>
+        <p>Las <strong>funciones</strong> son segmentos de código que realizan una función específica. Las <strong>funciones</strong> pueden tener variables de entrada para cambiar su comportamiento, y normalmente nos regresan un resultado al finalizar.</p>
+        <h3>Como implementar una función en JavaScript</h3>
+        <p>Para implementar funciones, utilizamos la palabra reservada <strong>function</strong> seguida de paréntesis en donde podemos tener variables de entrada(parámetros o argumentos) para que modifiquen el comportamiento de la función. Después se abren llaves {}, las cuales contiene las líneas de código que se ejecutaran cuando se manda a llamar la función. Observemos el siguiente ejemplo:</p>
+        <img src="../img/funcion_1.jpg" alt="Función de ejemplo">
+        <h3>¿Como ejecuto una función?</h3>
+        <p>Para ejecutar una función debemos llamarla y podemos hacer esto cuantas veces queramos. Es por esto que son útiles para reutilizar código. Esto se hace muy fácilmente, escribimos el nombre de la función junto con sus <strong>parámetros</strong> que, en el caso anterior serian <strong>a y b.</strong> Si solo escribieramos un <strong>parámetro en la llamada, JavaScript nos arrojaría un erro de ejecución debido a que la función que estamos usando requiere 2.</strong></p>
+        <img src="../img/resultado_funcion1.jpg" alt="Ejecutando la función">
+        <p>Como podemos ver se crea una variable llamada respuesta y en esa variable se llama la función anteriormente creada y se le asignan los valores <strong>integer</strong> 2 y 3. Despues de esto hacemos uso de una función de <strong>JavaScript</strong> llamada console.log que nos muestra el parámetro en la consola.</p>
+        <h3>Funciones que no reciben parámetros</h3>
+        <p>Si una <strong>función</strong> no tiene return, su valor será undefined por defecto. Estas funciones se usan cuando quieres que realicen una tarea o acción específica, pero no necesitas que devuelvan ningún valor.</p>
+        <img src="../img/funcion_sin_parametro.jpg" alt="Funcion sin parámetros">
+        <hr color="black">
+        <h2>TEMA 4: Operadores</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 5: Arreglos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 6: Condicionales</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 7: Operadores booleanos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 8: Switch</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 9: Ciclos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 10: El ciclo while</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 11: Accediendo a elementos HTML</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 12: Acceder a elementos por clase y tipo de elemento</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 13: Modificar atributos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 14: Cambiando estilos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>TEMA 15: Eventos</h2>
+        <p></p>
+        <hr color="black">
+        <h2>EJERCICIO FINAL JAVASCRIPT</h2>
+        <p></p>
+        <script>
+            //Este script hace que salga una alerta al abrir esta pestaña o refrescarla.
+            //alert("Esto es una alerta.")
+        </script>
         <script src="../scripts/scripts.js"></script>
     </body>
 </html>
