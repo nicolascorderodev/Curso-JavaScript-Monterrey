@@ -60,10 +60,69 @@ function miFuncion(a,b){
 var respuesta = miFuncion(2, 3);
 console.log(respuesta);
 
+
+
 *Función que no regresa ningun valor.
 function saludar() {
     console.log("¡Hola, Nicolás!");
 }
-saludar(); // Esto imprime "¡Hola, Nicolás!" pero no devuelve nada.
+saludar(); //Esto imprime "¡Hola, Nicolás!" pero no devuelve nada.
+
+
+
+*Ejercicio hecho en clase.
+function estructura(a,b,c){
+    var desarrollo = a * a * b + c - c;
+    console.log("Hola Mundo");
+    return desarrollo;
+}
+console.log(estructura(7,2,3));
 !Finaliza el TEMA 3: Funciones.
 */
+
+/*
+!TEMA 4: Operadores.
+*Operadores aritméticos
+var suma = 2 + 5;
+console.log(suma);
+
+var resta = -2 - 3;
+console.log(resta);
+
+var multiplicacion = 12 * .5;
+console.log(multiplicacion);
+
+var division = 6/3;
+console.log(division);
+
+var residuo_division = 8 % 2;
+console.log(residuo_division);
+
+var potencia = 2 ** 8;
+console.log(potencia);
+!Finaliza el TEMA 4: Operadores.
+*/
+
+suma = 2;
+suma += 7;
+console.log(suma);
+
+resta = 9;
+resta -= 9;
+console.log(resta);
+
+multiplicacion = 8;
+multiplicacion *= 7;
+console.log(multiplicacion);
+
+division = 6;
+division /= 6;
+console.log(division);
+
+modulo = 5;
+modulo %= 11;
+console.log(modulo);
+
+potencia = 4;
+potencia **= 2;
+console.log(potencia);
